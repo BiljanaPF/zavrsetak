@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `blog` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `blog`;
+CREATE DATABASE  IF NOT EXISTS 'blog' /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE 'blog';
 -- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
 --
 -- Host: localhost    Database: blog
@@ -18,29 +18,29 @@ USE `blog`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `posts`
+-- Table structure for table 'posts'
 --
 
-DROP TABLE IF EXISTS `posts`;
+DROP TABLE IF EXISTS 'posts';
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `posts` (
-  `Id` int DEFAULT NULL,
-  `Title` varchar(255) DEFAULT NULL,
-  `Body` varchar(500) DEFAULT NULL,
-  `Author` text,
-  `Created_at` date DEFAULT NULL
+CREATE TABLE 'posts' (
+  'Id' int DEFAULT NULL,
+  'Title' varchar(255) DEFAULT NULL,
+  'Body' varchar(500) DEFAULT NULL,
+  'Author' text,
+  'Created_at' date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `posts`
+-- Dumping data for table 'posts'
 --
 
-LOCK TABLES `posts` WRITE;
-/*!40000 ALTER TABLE `posts` DISABLE KEYS */;
-INSERT INTO `posts` VALUES (1,'Test','This is a test entry.','Biljana','2022-11-01'),(2,'New Test','Second table input.','Dejan','2022-11-01'),(3,'Checking','Hey Ho, lets go!','Jelena','2022-11-01');
-/*!40000 ALTER TABLE `posts` ENABLE KEYS */;
+LOCK TABLES 'posts' WRITE;
+/*!40000 ALTER TABLE 'posts' DISABLE KEYS */;
+INSERT INTO 'posts' VALUES (1,'Test','This is a test entry.','Biljana','2022-11-01'),(2,'New Test','Second table input.','Dejan','2022-11-01'),(3,'Checking','Hey Ho, lets go!','Jelena','2022-11-01');
+/*!40000 ALTER TABLE 'posts' ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
