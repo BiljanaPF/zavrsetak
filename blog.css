@@ -10,7 +10,7 @@
 
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: #b34848;
+    color: #555;
 }
 
 
@@ -28,7 +28,7 @@ h6,
 .h6 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    color: #333;
+    color: #b34848;
 }
 
 
@@ -58,10 +58,10 @@ h6,
     font-weight: 500;
     color: #cdddeb;
 }
-.nav-link:hover,
+.nav-link:hover, text-decoration: underline;
 .nav-link:focus {
     color: #fff;
-    background-color: transparent;
+    background-color: #b34848;
 }
 
 /* Active state gets a caret at the bottom */
